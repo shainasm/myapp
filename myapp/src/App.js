@@ -1,13 +1,11 @@
-function APP() {
+import Navbar from './Navbar'
+
+const APP=()=> {
   return(
     <div className="APP">
-     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-     <h4>heading4</h4>
-     <h4>heading4</h4>
-     <h4>heading4</h4>
-     <h4>heading4</h4>
-     <h4>heading4</h4>
-
+      <Navbar />
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+     
     </div>
   );
 }
@@ -15,3 +13,8 @@ function APP() {
 export default APP;
 
 // this file is'nt html file, it is jsx file which looks like an html file
+
+// react is used to modify the virtual dom and react dom is the link between actual dom and virtual dom
+
+// npx create-react-pp appname is used a create a server instantly
+
