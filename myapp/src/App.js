@@ -1,20 +1,21 @@
-import Navbar from './Navbar'
+import Navbar from './layouts/Navbar'
+import Footer from './layouts/Footer'
+import Content from './components/Content'
 
-const APP=()=> {
-  return(
-    <div className="APP">
+
+
+const App = () => {
+
+  return (
+    <div className="App">
       <Navbar />
-     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-     
-    </div>
+      <Content />
+      <Footer />
+      
+    </div >
   );
 }
 
-export default APP;
 
-// this file is'nt html file, it is jsx file which looks like an html file
 
-// react is used to modify the virtual dom and react dom is the link between actual dom and virtual dom
-
-// npx create-react-pp appname is used a create a server instantly
-
+export default App;
