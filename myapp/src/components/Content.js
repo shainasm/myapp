@@ -1,19 +1,36 @@
-import ListItem from "./ListItem";
+import { useState } from 'react'
 
 const Content = () => {
 
-    const chores = ["item 1", "item 2", "item 3", "item 4"]
+    const [items, setItems] = useState([])
+    const [value, setValue] = useState('')
+
+    const handleSubmit = () => {
+      setItems(prev => [...prev,value])/*this is called the spread operator*/
+      setValue('')
+    }
+
+    const handleInput = (e) => {
+      setValue(e.target.value)
+    }
+
+    const handleDelete = (item) => {
+      console.log(item)
+      setItems(prev => prev.filter(i => i !== item))
+    }
+
 
     return (
-
-      <div className="container">
-        <ul>
-          {
-            chores.map(chore => <ListItem chore={chore} />)
-          }
-        </ul>
-      </div>
+      <>
+        <h2>Todo</h2>
+           
+       <input value={value} onChange={handleInput} type="text" />
+        <button onClick={handleSubmit} type="submit">Add</button>
+          <ul>
+            {items.map(item => <li>{item} <button onClick={() => { handleDelete(item) }}>Delete</button></li>)} 
+          </ul>
+      </>
     );
 }
-
+ 
 export default Content;

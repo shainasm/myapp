@@ -1,11 +1,11 @@
-const Navbar = () => {
-  return (
-      <nav>
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-      </nav>
-  )
-}
+// const Navbar = () => {
+//   return (
+//       <nav>
+//           <a href="https://github.com/Kartik18g/RockPaperScissor">Home</a>
+//           <a href="https://github.com/Kartik18g/RockPaperScissor">About</a>
+//           <a href="https://github.com/Kartik18g/RockPaperScissor">Contact</a>
+//       </nav>
+//   )
+// }
 
-export default Navbar
+// export default Navbar

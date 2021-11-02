@@ -1,13 +1,13 @@
-const Footer = () => {
-  return (
-      <footer>
-          <a href="#">Github</a>
-          <a href="#">Instagram</a>
-          <a href="#">Twitter</a>
-          <a href="#">Linkedin</a>
+// const Footer = () => {
+//   return (
+//       <footer>
+//           <a href="https://github.com/Kartik18g/RockPaperScissor">Github</a>
+//           <a href="https://github.com/Kartik18g/RockPaperScissor">Instagram</a>
+//           <a href="https://github.com/Kartik18g/RockPaperScissor">Twitter</a>
+//           <a href="https://github.com/Kartik18g/RockPaperScissor">Linkedin</a>
 
-      </footer>
-  );
-}
+//       </footer>
+//   );
+// }
 
-export default Footer;
+// export default Footer;
