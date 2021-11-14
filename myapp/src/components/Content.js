@@ -5,15 +5,6 @@ const Content = () => {
   const [counter, setCounter] = useState(0)
   const [content, setContent] = useState([])
 
-  const APICall = async () => {
-      const res = await fetch('https://jsonplaceholder.typicode.com/photos')
-      const data = await res.json()
-      setContent(data)
-  }
-
-  useEffect(() => {
-      APICall()
-  }, [])
 
   useEffect(() => {
     console.log('counter changed')
