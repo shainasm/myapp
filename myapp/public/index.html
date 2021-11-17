@@ -13,106 +13,58 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <!-- mapbox -->
 
+    <link rel="stylesheet" href="./common.css">
+
     <title>Bootstrap</title>
 </head>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler"
-       type="button"
-       data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
+<body>
+  <div class="navbar navbar-expand-lg navbar-dark bg-dark py-3 text-white fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">DART</a>
+      <button data-bs-toggle="collapse" data-bs-target="#navItem" class="navbar-toggler" type="button">
+      <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </div>
-      </div>
-    </div>
-  </nav>
 
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-  </button>
-  
-  <!-- Modal -->
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form action="">
-            <input type="text"/>
-            <input type="date"/>
-            <input type="color"/>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+      <div class="collapse text-white" id="navItem">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">BUY</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">SELL</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">DISCOVER</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 
-  <!-- carousel -->
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://th.bing.com/th/id/OIP.ceGbTJIrj6ajM2XlsyFXAwHaE7?w=265&h=180&c=7&r=0&o=5&pid=1.7" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://www.bing.com/th?id=OIP.rUO26-4viPeu8wzAK7wTSQHaGL&w=129&h=108&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://www.bing.com/images/search?view=detailV2&ccid=I8xbOeYr&id=82D2E196C78D8B7F5DC57A26211F3741FBE70A7B&thid=OIP.I8xbOeYr4gSjEb6yg8_QmQHaEK&mediaurl=https%3a%2f%2fcms.qz.com%2fwp-content%2fuploads%2f2016%2f07%2fcoffee.jpg%3fquality%3d75%26strip%3dall%26w%3d1400&exph=787&expw=1400&q=coffee&simid=608013467721466181&FORM=IRPRST&ck=7390F17BB4C810D0F990D331F6782B17&selectedIndex=0&idpp=overlayview&ajaxhist=0&ajaxserp=0" class="d-block w-100" alt="...">
-      </div>
+<!-- jumbotron -->
+<section class="bg-white text-dark p-5 mt-5 mt-md-0 text-center text-sm-start">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+     <div>
+      <h1>Find art you <span class="text-danger">Love ❤</span></h1>
+      <p class="lead my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure veritatis quibusdam error quia reprehenderit sed officiis, laboriosam quasi molestiae ratione minima maxime voluptates veniam enim voluptatibus! Dicta modi hic maiores.</p>
+      <button data-bs-target="#enquire" data-bs-toggle="modal" class="btn btn-primary btn-lg">Enquire now</button>
+     </div>
+    
+      <img class="w-50 d-none d-sm-block" src="https://images.unsplash.com/photo-1562963527-ab1b093b0ff7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="" />
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
+</section>
 
-<!-- card -->
-  <div class="card text-center">
-    <div class="card-header">
-      Featured
+<!-- modal -->
+<div class="modal fade" id="enquire">
+  <div class="modal-dilog">
+    <div class="modal-content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quasi magni illo placeat quis fugiat repudiandae assumenda. Obcaecati, odio doloremque quam quo velit nulla nostrum atque ipsa qui consequuntur cumque?
     </div>
-    <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-    <div class="card-footer text-muted">
-      2 days ago
-    </div>
-    <br/>
-
-    <div class="card">
-      <div class="header">i'm a header</div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, quod ipsa necessitatibus totam aperiam neque nam, fugiat unde velit reiciendis sint est voluptatem non eum, tempore itaque cupiditate? Optio, rem
-      </div>
-    </div>
-  
-
-
-<!-- <button data-bs-target="#me" data-bs-toggle="collapse">click</button>
-<div id="me" class="collapse">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iusto, corporis laboriosam illo id impedit quia, dolorum expedita tempore officiis voluptates nemo laudantium, excepturi error vitae ipsa exercitationem perferendis. Alias!
-</div> -->
+  </div>
+</div>
 
 </body>
 </html>
